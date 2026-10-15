@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn {
+    @apply rounded-md border-2 border-ink bg-white px-3 py-1 text-sm font-bold shadow-[2px_2px_0_#1b1b1b] transition hover:bg-paper active:translate-y-px;
+  }
+  .btn-danger {
+    @apply btn bg-accent text-white hover:bg-accent;
+  }
+}
+
+body {
+  background: #fdf6e3;
+  color: #1b1b1b;
+  font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
+}
