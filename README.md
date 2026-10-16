@@ -5,6 +5,8 @@ A web-based 2D character creator and animator inspired by South Park's cut-out p
 ## Features
 
 - Asset library by tab: heads, eyes, mouths, hair & hats, tops, bottoms, props, backgrounds.
+- Halloween parts: pumpkin and skull heads, scary red eyes, vampire fangs, bat bow tie, witch hat, graveyard background.
+- More styles: screaming teeth mouth, mohawk, soldier helmet, rockstar hair, long hair, afro, curly hair, bun, cowboy hat, and NY city, ocean, forest, and space backgrounds.
 - Click an asset to add it, or to swap the matching single-slot part (head, eyes, mouth, and so on).
 - Canvas editing with drag, scale, and rotate handles, optional grid and snapping.
 - Inspector sliders for X/Y, width/height scale, angle, and layer order, plus a tint color picker.
@@ -12,6 +14,12 @@ A web-based 2D character creator and animator inspired by South Park's cut-out p
 - Randomize builds a valid persona from one part per slot.
 - Export PNG (optional transparent background), SVG cut-out, and Godot 4 blueprint JSON.
 - Copy a Godot GDScript loader to the clipboard, and import a saved blueprint JSON.
+
+## Gallery
+
+![30 random Avatarian characters](avatarian-poster.svg)
+
+`avatarian-poster.svg` is a static poster of 30 random characters. Each one comes from the same randomizer as the app's Randomize button.
 
 ## Requirements
 
