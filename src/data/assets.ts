@@ -98,6 +98,14 @@ export const ASSETS: AssetDef[] = [
   def('hair_messy', 'Messy hair', 'hair', 'hair_hat', 'hair_hats/hair_messy.svg', FACE, BROWN),
   def('hair_bald', 'Bald top', 'hair', 'hair_hat', 'hair_hats/hair_bald.svg', FACE),
   def('hair_witch', 'Witch hat', 'hair', 'hair_hat', 'hair_hats/hair_witch.svg', FACE, '#2b1d4a'),
+  def('hair_mohawk', 'Mohawk', 'hair', 'hair_hat', 'hair_hats/hair_mohawk.svg', FACE, '#d7263d'),
+  def('hair_soldier', 'Soldier helmet', 'hair', 'hair_hat', 'hair_hats/hair_soldier.svg', FACE, '#5b6b3a'),
+  def('hair_rockstar', 'Rockstar hair', 'hair', 'hair_hat', 'hair_hats/hair_rockstar.svg', FACE, '#2b2b2b'),
+  def('hair_long', 'Long hair', 'hair', 'hair_hat', 'hair_hats/hair_long.svg', FACE, '#8a5a2b'),
+  def('hair_afro', 'Afro', 'hair', 'hair_hat', 'hair_hats/hair_afro.svg', FACE, '#2b1d12'),
+  def('hair_curly', 'Curly hair', 'hair', 'hair_hat', 'hair_hats/hair_curly.svg', FACE, '#5a3a1e'),
+  def('hair_bun', 'Bun', 'hair', 'hair_hat', 'hair_hats/hair_bun.svg', FACE, '#6b4423'),
+  def('hat_cowboy', 'Cowboy hat', 'hair', 'hair_hat', 'hair_hats/hat_cowboy.svg', FACE, '#8a5a2b'),
 
   def('torso_puffy', 'Puffy jacket', 'tops', 'torso', 'torsos/torso_puffy.svg', TORSO, BLUE),
   def('torso_hoodie', 'Hoodie', 'tops', 'torso', 'torsos/torso_hoodie.svg', TORSO, GREEN),
@@ -115,6 +123,10 @@ export const ASSETS: AssetDef[] = [
   def('bg_snowy_town', 'Snowy town', 'backgrounds', 'background', 'backgrounds/bg_snowy_town.svg', STAGE),
   def('bg_bus_stop', 'Bus stop', 'backgrounds', 'background', 'backgrounds/bg_bus_stop.svg', STAGE),
   def('bg_graveyard', 'Graveyard', 'backgrounds', 'background', 'backgrounds/bg_graveyard.svg', STAGE),
+  def('bg_ny_city', 'NY city', 'backgrounds', 'background', 'backgrounds/bg_ny_city.svg', STAGE),
+  def('bg_ocean', 'Ocean', 'backgrounds', 'background', 'backgrounds/bg_ocean.svg', STAGE),
+  def('bg_forest', 'Forest', 'backgrounds', 'background', 'backgrounds/bg_forest.svg', STAGE),
+  def('bg_space', 'Space', 'backgrounds', 'background', 'backgrounds/bg_space.svg', STAGE),
 ];
 
 export const ASSET_BY_ID: Record<string, AssetDef> = Object.fromEntries(ASSETS.map((a) => [a.id, a]));
