@@ -74,12 +74,15 @@ export const ASSETS: AssetDef[] = [
   def('head_round', 'Round', 'heads', 'head', 'heads/head_round.svg', FACE, SKIN),
   def('head_square', 'Square', 'heads', 'head', 'heads/head_square.svg', FACE, SKIN),
   def('head_chiseled', 'Chiseled', 'heads', 'head', 'heads/head_chiseled.svg', FACE, SKIN),
+  def('head_pumpkin', 'Pumpkin', 'heads', 'head', 'heads/head_pumpkin.svg', FACE),
+  def('head_skull', 'Skull', 'heads', 'head', 'heads/head_skull.svg', FACE),
 
   def('eyes_happy', 'Happy', 'eyes', 'eyes', 'eyes/eyes_happy.svg', FACE),
   def('eyes_bored', 'Bored', 'eyes', 'eyes', 'eyes/eyes_bored.svg', FACE),
   def('eyes_angry', 'Angry', 'eyes', 'eyes', 'eyes/eyes_angry.svg', FACE),
   def('eyes_wide', 'Wide', 'eyes', 'eyes', 'eyes/eyes_wide.svg', FACE),
   def('eyes_squint', 'Squinting', 'eyes', 'eyes', 'eyes/eyes_squint.svg', FACE),
+  def('eyes_scary', 'Scary red', 'eyes', 'eyes', 'eyes/eyes_scary.svg', FACE),
   def('brows_flat', 'Flat brows', 'eyes', 'eyebrows', 'eyebrows/brows_flat.svg', FACE),
   def('brows_angry', 'Angry brows', 'eyes', 'eyebrows', 'eyebrows/brows_angry.svg', FACE),
 
@@ -87,11 +90,14 @@ export const ASSETS: AssetDef[] = [
   def('mouth_frown', 'Frown', 'mouths', 'mouth', 'mouths/mouth_frown.svg', FACE),
   def('mouth_open', 'Open', 'mouths', 'mouth', 'mouths/mouth_open.svg', FACE),
   def('mouth_talk', 'Talking', 'mouths', 'mouth', 'mouths/mouth_talk.svg', FACE),
+  def('mouth_scream_teeth', 'Screaming (teeth)', 'mouths', 'mouth', 'mouths/mouth_scream_teeth.svg', FACE),
+  def('mouth_vampire', 'Vampire fangs', 'mouths', 'mouth', 'mouths/mouth_vampire.svg', FACE),
 
   def('hair_beanie', 'Winter beanie', 'hair', 'hair_hat', 'hair_hats/hair_beanie.svg', FACE, RED),
   def('hair_cap', 'Cap', 'hair', 'hair_hat', 'hair_hats/hair_cap.svg', FACE, BLUE),
   def('hair_messy', 'Messy hair', 'hair', 'hair_hat', 'hair_hats/hair_messy.svg', FACE, BROWN),
   def('hair_bald', 'Bald top', 'hair', 'hair_hat', 'hair_hats/hair_bald.svg', FACE),
+  def('hair_witch', 'Witch hat', 'hair', 'hair_hat', 'hair_hats/hair_witch.svg', FACE, '#2b1d4a'),
 
   def('torso_puffy', 'Puffy jacket', 'tops', 'torso', 'torsos/torso_puffy.svg', TORSO, BLUE),
   def('torso_hoodie', 'Hoodie', 'tops', 'torso', 'torsos/torso_hoodie.svg', TORSO, GREEN),
@@ -103,10 +109,12 @@ export const ASSETS: AssetDef[] = [
 
   def('prop_scarf', 'Scarf', 'props', 'prop', 'props/prop_scarf.svg', PROP, YELLOW),
   def('prop_glasses', 'Glasses', 'props', 'prop', 'props/prop_glasses.svg', FACE),
+  def('prop_bat', 'Bat bow tie', 'props', 'prop', 'props/prop_bat.svg', PROP),
 
   def('bg_solid_stage', 'Solid stage', 'backgrounds', 'background', 'backgrounds/bg_solid_stage.svg', STAGE, '#bfe3ff'),
   def('bg_snowy_town', 'Snowy town', 'backgrounds', 'background', 'backgrounds/bg_snowy_town.svg', STAGE),
   def('bg_bus_stop', 'Bus stop', 'backgrounds', 'background', 'backgrounds/bg_bus_stop.svg', STAGE),
+  def('bg_graveyard', 'Graveyard', 'backgrounds', 'background', 'backgrounds/bg_graveyard.svg', STAGE),
 ];
 
 export const ASSET_BY_ID: Record<string, AssetDef> = Object.fromEntries(ASSETS.map((a) => [a.id, a]));

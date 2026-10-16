@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <clipPath id="scream-mouth">
+      <ellipse cx="100" cy="146" rx="26" ry="22"/>
+    </clipPath>
+  </defs>
+  <ellipse cx="100" cy="146" rx="26" ry="22" fill="#5a0a0a" stroke="#000" stroke-width="3"/>
+  <g clip-path="url(#scream-mouth)" fill="#fff" stroke="#000" stroke-width="2" stroke-linejoin="round">
+    <polygon points="74,110 74,122 82,132 90,122 98,132 106,122 114,132 122,122 130,132 138,122 146,110"/>
+    <polygon points="74,182 74,170 82,160 90,170 98,160 106,170 114,160 122,170 130,160 138,170 146,182"/>
+  </g>
+</svg>
