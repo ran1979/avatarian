@@ -47,6 +47,9 @@ const BLUE = CLOTH_COLORS[1];
 const GREEN = CLOTH_COLORS[2];
 const YELLOW = CLOTH_COLORS[3];
 const BROWN = CLOTH_COLORS[8];
+const PINK = '#ff7aa2';
+const PURPLE = '#8e44ad';
+const LIPSTICK = '#c2185b';
 
 // defaultColor present => tintable (the SVG marks those parts with data-tint and Godot modulates them)
 function def(
@@ -83,6 +86,7 @@ export const ASSETS: AssetDef[] = [
   def('eyes_wide', 'Wide', 'eyes', 'eyes', 'eyes/eyes_wide.svg', FACE),
   def('eyes_squint', 'Squinting', 'eyes', 'eyes', 'eyes/eyes_squint.svg', FACE),
   def('eyes_scary', 'Scary red', 'eyes', 'eyes', 'eyes/eyes_scary.svg', FACE),
+  def('eyes_liner', 'Eyeliner wing', 'eyes', 'eyes', 'eyes/eyes_liner.svg', FACE),
   def('brows_flat', 'Flat brows', 'eyes', 'eyebrows', 'eyebrows/brows_flat.svg', FACE),
   def('brows_angry', 'Angry brows', 'eyes', 'eyebrows', 'eyebrows/brows_angry.svg', FACE),
 
@@ -92,6 +96,7 @@ export const ASSETS: AssetDef[] = [
   def('mouth_talk', 'Talking', 'mouths', 'mouth', 'mouths/mouth_talk.svg', FACE),
   def('mouth_scream_teeth', 'Screaming (teeth)', 'mouths', 'mouth', 'mouths/mouth_scream_teeth.svg', FACE),
   def('mouth_vampire', 'Vampire fangs', 'mouths', 'mouth', 'mouths/mouth_vampire.svg', FACE),
+  def('mouth_lips', 'Lips', 'mouths', 'mouth', 'mouths/mouth_lips.svg', FACE, LIPSTICK),
 
   def('hair_beanie', 'Winter beanie', 'hair', 'hair_hat', 'hair_hats/hair_beanie.svg', FACE, RED),
   def('hair_cap', 'Cap', 'hair', 'hair_hat', 'hair_hats/hair_cap.svg', FACE, BLUE),
@@ -106,6 +111,7 @@ export const ASSETS: AssetDef[] = [
   def('hair_curly', 'Curly hair', 'hair', 'hair_hat', 'hair_hats/hair_curly.svg', FACE, '#5a3a1e'),
   def('hair_bun', 'Bun', 'hair', 'hair_hat', 'hair_hats/hair_bun.svg', FACE, '#6b4423'),
   def('hat_cowboy', 'Cowboy hat', 'hair', 'hair_hat', 'hair_hats/hat_cowboy.svg', FACE, '#8a5a2b'),
+  def('hair_headband', 'Headband with bow', 'hair', 'hair_hat', 'hair_hats/hair_headband.svg', FACE, PINK),
 
   def('torso_puffy', 'Puffy jacket', 'tops', 'torso', 'torsos/torso_puffy.svg', TORSO, BLUE),
   def('torso_hoodie', 'Hoodie', 'tops', 'torso', 'torsos/torso_hoodie.svg', TORSO, GREEN),
@@ -114,8 +120,11 @@ export const ASSETS: AssetDef[] = [
   def('legs_jeans', 'Jeans', 'bottoms', 'legs', 'legs/legs_jeans.svg', LEGS, '#2f4a8c'),
   def('legs_shorts', 'Shorts', 'bottoms', 'legs', 'legs/legs_shorts.svg', LEGS, '#3d3d3d'),
   def('legs_snowpants', 'Snow pants', 'bottoms', 'legs', 'legs/legs_snowpants.svg', LEGS, YELLOW),
+  def('legs_skirt', 'Long skirt', 'bottoms', 'legs', 'legs/legs_skirt.svg', LEGS, PURPLE),
+  def('legs_skirt_mini', 'Mini skirt', 'bottoms', 'legs', 'legs/legs_skirt_mini.svg', LEGS, PINK),
 
   def('prop_scarf', 'Scarf', 'props', 'prop', 'props/prop_scarf.svg', PROP, YELLOW),
+  def('prop_scarf_silk', 'Silk scarf', 'props', 'prop', 'props/prop_scarf_silk.svg', PROP, PINK),
   def('prop_glasses', 'Glasses', 'props', 'prop', 'props/prop_glasses.svg', FACE),
   def('prop_bat', 'Bat bow tie', 'props', 'prop', 'props/prop_bat.svg', PROP),
 
