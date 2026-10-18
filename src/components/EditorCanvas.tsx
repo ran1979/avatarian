@@ -3,7 +3,7 @@ import { Stage, Layer, Rect, Line, Image as KImage, Transformer } from 'react-ko
 import type Konva from 'konva';
 import type { AssetLayer } from '../types/blueprint';
 import { useEditor } from '../store/avatarStore';
-import { assetUrl } from '../data/assets';
+import { assetUrl, slotForPath } from '../data/assets';
 import { useTintedImage } from '../hooks/useTintedImage';
 
 const ASSET_SIZE = 200;
@@ -21,6 +21,8 @@ export function EditorCanvas() {
   const gridSize = useEditor((s) => s.gridSize);
   const toggleGrid = useEditor((s) => s.toggleGrid);
   const toggleSnap = useEditor((s) => s.toggleSnap);
+  const moveAll = useEditor((s) => s.moveAll);
+  const toggleMoveAll = useEditor((s) => s.toggleMoveAll);
 
   const wrapRef = useRef<HTMLDivElement>(null);
   const [fit, setFit] = useState(1);
@@ -91,6 +93,9 @@ export function EditorCanvas() {
         <label className="flex items-center gap-1">
           <input type="checkbox" checked={snap} onChange={toggleSnap} /> Snap
         </label>
+        <label className="flex items-center gap-1" title="Drag any part to move the whole avatar">
+          <input type="checkbox" checked={moveAll} onChange={toggleMoveAll} /> Move whole avatar
+        </label>
       </div>
     </div>
   );
@@ -108,7 +113,11 @@ interface LayerNodeProps {
 function LayerNode({ layer, selected, snapToGrid, gridSize, onSelect, onChange }: LayerNodeProps) {
   const shapeRef = useRef<Konva.Image>(null);
   const trRef = useRef<Konva.Transformer>(null);
+  const lastPos = useRef({ x: 0, y: 0 });
   const image = useTintedImage(assetUrl(layer.godotResPath), layer.fillColor);
+  const moveAll = useEditor((s) => s.moveAll);
+  const moveFigure = useEditor((s) => s.moveFigure);
+  const isBackground = slotForPath(layer.godotResPath, layer.category) === 'background';
 
   // Attach the transformer whenever this layer becomes selected or its art changes.
   useEffect(() => {
@@ -141,6 +150,16 @@ function LayerNode({ layer, selected, snapToGrid, gridSize, onSelect, onChange }
         onMouseDown={(e) => {
           e.cancelBubble = true;
           onSelect();
+        }}
+        onDragStart={(e) => {
+          lastPos.current = { x: e.target.x(), y: e.target.y() };
+        }}
+        onDragMove={(e) => {
+          if (!moveAll || isBackground) return;
+          // Move the rest of the avatar by this step; this node follows Konva's drag.
+          const { x, y } = e.target.position();
+          moveFigure(x - lastPos.current.x, y - lastPos.current.y);
+          lastPos.current = { x, y };
         }}
         onDragEnd={(e) => onChange({ x: e.target.x(), y: e.target.y() })}
         onTransformEnd={() => {

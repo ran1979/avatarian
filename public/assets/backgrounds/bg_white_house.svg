@@ -1,22 +1,26 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
   <rect width="200" height="150" fill="#bfe3ff"/>
   <rect y="150" width="200" height="50" fill="#6fbf5a" stroke="#000" stroke-width="1.2"/>
-  <rect x="40" y="82" width="120" height="68" fill="#ffffff" stroke="#000" stroke-width="1.2"/>
-  <polygon points="78,82 100,58 122,82" fill="#ffffff" stroke="#000" stroke-width="1.2"/>
-  <rect x="76" y="80" width="48" height="4" fill="#dddddd"/>
-  <g fill="#eeeeee" stroke="#000" stroke-width="1">
-    <rect x="80" y="86" width="5" height="62"/>
-    <rect x="90" y="86" width="5" height="62"/>
-    <rect x="105" y="86" width="5" height="62"/>
-    <rect x="115" y="86" width="5" height="62"/>
+  <rect x="0" y="62" width="200" height="90" fill="#ffffff" stroke="#000" stroke-width="1.5"/>
+  <polygon points="58,62 100,22 142,62" fill="#ffffff" stroke="#000" stroke-width="1.5"/>
+  <rect x="0" y="56" width="200" height="8" fill="#eeeeee" stroke="#000" stroke-width="1.2"/>
+  <g fill="#9ab8d6" stroke="#000" stroke-width="1.2">
+    <rect x="6" y="72" width="18" height="22"/>
+    <rect x="30" y="72" width="18" height="22"/>
+    <rect x="152" y="72" width="18" height="22"/>
+    <rect x="176" y="72" width="18" height="22"/>
+    <rect x="6" y="110" width="18" height="22"/>
+    <rect x="30" y="110" width="18" height="22"/>
+    <rect x="152" y="110" width="18" height="22"/>
+    <rect x="176" y="110" width="18" height="22"/>
   </g>
-  <g fill="#9ab8d6" stroke="#000" stroke-width="1">
-    <rect x="50" y="95" width="16" height="16"/>
-    <rect x="134" y="95" width="16" height="16"/>
-    <rect x="50" y="122" width="16" height="16"/>
-    <rect x="134" y="122" width="16" height="16"/>
+  <g fill="#eeeeee" stroke="#000" stroke-width="1.2">
+    <rect x="62" y="70" width="8" height="80"/>
+    <rect x="80" y="70" width="8" height="80"/>
+    <rect x="112" y="70" width="8" height="80"/>
+    <rect x="130" y="70" width="8" height="80"/>
   </g>
-  <rect x="94" y="118" width="12" height="32" fill="#444" stroke="#000" stroke-width="1"/>
-  <rect x="168" y="30" width="3" height="120" fill="#444"/>
-  <rect x="171" y="30" width="20" height="12" fill="#d7263d" stroke="#000" stroke-width="1"/>
+  <rect x="91" y="112" width="18" height="38" fill="#444" stroke="#000" stroke-width="1.2"/>
+  <rect x="14" y="20" width="3" height="36" fill="#444"/>
+  <rect x="17" y="20" width="20" height="12" fill="#d7263d" stroke="#000" stroke-width="1"/>
 </svg>

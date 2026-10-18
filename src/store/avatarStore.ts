@@ -16,11 +16,14 @@ export interface EditorState {
   showGrid: boolean;
   snap: boolean;
   gridSize: number;
+  moveAll: boolean;
 
   setProjectName: (name: string) => void;
   setBackgroundColor: (color: string) => void;
   toggleGrid: () => void;
   toggleSnap: () => void;
+  toggleMoveAll: () => void;
+  moveFigure: (dx: number, dy: number) => void;
   select: (id: string | null) => void;
   addAsset: (asset: AssetDef) => void;
   updateLayer: (id: string, patch: LayerPatch) => void;
@@ -44,11 +47,20 @@ export const useEditor = create<EditorState>()((set, get) => ({
   showGrid: true,
   snap: false,
   gridSize: 20,
+  moveAll: false,
 
   setProjectName: (projectName) => set({ projectName }),
   setBackgroundColor: (backgroundColor) => set({ backgroundColor }),
   toggleGrid: () => set((s) => ({ showGrid: !s.showGrid })),
   toggleSnap: () => set((s) => ({ snap: !s.snap })),
+  toggleMoveAll: () => set((s) => ({ moveAll: !s.moveAll })),
+  // Shift every non-background layer together. Background stays put.
+  moveFigure: (dx, dy) =>
+    set((s) => ({
+      layers: s.layers.map((l) =>
+        slotForPath(l.godotResPath, l.category) === 'background' ? l : { ...l, x: l.x + dx, y: l.y + dy },
+      ),
+    })),
   select: (selectedId) => set({ selectedId }),
 
   addAsset: (asset) =>
