@@ -142,6 +142,10 @@ export const ASSETS: AssetDef[] = [
   def('bg_ocean', 'Ocean', 'backgrounds', 'background', 'backgrounds/bg_ocean.svg', STAGE),
   def('bg_forest', 'Forest', 'backgrounds', 'background', 'backgrounds/bg_forest.svg', STAGE),
   def('bg_space', 'Space', 'backgrounds', 'background', 'backgrounds/bg_space.svg', STAGE),
+  def('bg_white_house', 'White House', 'backgrounds', 'background', 'backgrounds/bg_white_house.svg', STAGE),
+  def('bg_burger_place', 'Burger place', 'backgrounds', 'background', 'backgrounds/bg_burger_place.svg', STAGE),
+  def('bg_carnival', 'Carnival', 'backgrounds', 'background', 'backgrounds/bg_carnival.svg', STAGE),
+  def('bg_moon', 'Moon', 'backgrounds', 'background', 'backgrounds/bg_moon.svg', STAGE),
 ];
 
 export const ASSET_BY_ID: Record<string, AssetDef> = Object.fromEntries(ASSETS.map((a) => [a.id, a]));

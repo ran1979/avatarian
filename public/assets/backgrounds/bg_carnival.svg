@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <rect width="200" height="200" fill="#3b2f85"/>
+  <rect y="150" width="200" height="50" fill="#5a3e8a" stroke="#000" stroke-width="1.2"/>
+  <g fill="none" stroke="#ffd23f" stroke-width="3">
+    <circle cx="150" cy="80" r="42"/>
+    <path d="M150 80 L150 38 M150 80 L192 80 M150 80 L108 80 M150 80 L150 122 M150 80 L171 44 M150 80 L129 116 M150 80 L129 44 M150 80 L171 116"/>
+  </g>
+  <g fill="#ff7aa2" stroke="#000" stroke-width="1">
+    <rect x="144" y="34" width="12" height="8"/>
+    <rect x="186" y="76" width="8" height="8"/>
+    <rect x="144" y="118" width="12" height="8"/>
+    <rect x="104" y="76" width="8" height="8"/>
+  </g>
+  <polygon points="10,150 100,64 190,150" fill="#d7263d" stroke="#000" stroke-width="1.2"/>
+  <polygon points="58,150 100,64 142,150" fill="#ffffff"/>
+  <polygon points="78,150 100,64 122,150" fill="#d7263d"/>
+  <path d="M0 22 Q100 52 200 22" fill="none" stroke="#000" stroke-width="1.2"/>
+  <g stroke="#000" stroke-width="1">
+    <polygon points="20,27 30,29 25,40" fill="#ffd23f"/>
+    <polygon points="50,36 60,38 55,49" fill="#7ad7f0"/>
+    <polygon points="80,42 90,44 85,55" fill="#ff7aa2"/>
+    <polygon points="110,42 120,40 115,52" fill="#ffd23f"/>
+    <polygon points="140,36 150,34 145,46" fill="#7ad7f0"/>
+    <polygon points="170,27 180,25 175,38" fill="#ff7aa2"/>
+  </g>
+</svg>
