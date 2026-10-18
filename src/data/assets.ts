@@ -50,6 +50,8 @@ const BROWN = CLOTH_COLORS[8];
 const PINK = '#ff7aa2';
 const PURPLE = '#8e44ad';
 const LIPSTICK = '#c2185b';
+const HOT_PINK = '#ff4f7b';
+const BAG = '#a0522d';
 
 // defaultColor present => tintable (the SVG marks those parts with data-tint and Godot modulates them)
 function def(
@@ -116,6 +118,8 @@ export const ASSETS: AssetDef[] = [
   def('torso_puffy', 'Puffy jacket', 'tops', 'torso', 'torsos/torso_puffy.svg', TORSO, BLUE),
   def('torso_hoodie', 'Hoodie', 'tops', 'torso', 'torsos/torso_hoodie.svg', TORSO, GREEN),
   def('torso_tshirt', 'T-shirt', 'tops', 'torso', 'torsos/torso_tshirt.svg', TORSO, RED),
+  def('torso_bikini', 'Bikini top', 'tops', 'torso', 'torsos/torso_bikini.svg', TORSO, HOT_PINK),
+  def('torso_crop_top', 'Crop top', 'tops', 'torso', 'torsos/torso_crop_top.svg', TORSO, PINK),
 
   def('legs_jeans', 'Jeans', 'bottoms', 'legs', 'legs/legs_jeans.svg', LEGS, '#2f4a8c'),
   def('legs_shorts', 'Shorts', 'bottoms', 'legs', 'legs/legs_shorts.svg', LEGS, '#3d3d3d'),
@@ -125,6 +129,8 @@ export const ASSETS: AssetDef[] = [
 
   def('prop_scarf', 'Scarf', 'props', 'prop', 'props/prop_scarf.svg', PROP, YELLOW),
   def('prop_scarf_silk', 'Silk scarf', 'props', 'prop', 'props/prop_scarf_silk.svg', PROP, PINK),
+  def('prop_sunglasses_cat', 'Cat-eye sunglasses', 'props', 'prop', 'props/prop_sunglasses_cat.svg', FACE),
+  def('prop_handbag', 'Handbag', 'props', 'prop', 'props/prop_handbag.svg', PROP, BAG),
   def('prop_glasses', 'Glasses', 'props', 'prop', 'props/prop_glasses.svg', FACE),
   def('prop_bat', 'Bat bow tie', 'props', 'prop', 'props/prop_bat.svg', PROP),
 
